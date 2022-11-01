@@ -1,0 +1,84 @@
+body {
+    width: 654px;
+    height: 926px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    border: 1px solid #323438;
+    align-items: center;
+    background-color: #1C1E21;
+}
+
+* {
+    color: #C4C4C4;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.body-container {
+    margin: 0;
+    background-color: #222429;
+}
+
+header, main {
+    height: auto;
+    background-color: #222429;
+}
+
+.container-fluid {
+    padding: 13px 13px 0px 13px;
+}
+
+form {
+    background-color: #1C1E21;
+    border: 1px solid #323438;
+    border-radius: 4px;
+    width: 471px;
+    height: 26px;
+    display: flex;
+}
+
+form input {
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+form .search {
+    align-self: center;
+    padding: 8.57px 7.57px;
+}
+
+input {
+    background-color: #1C1E21;
+    color: #C4C4C4;
+    border-radius: 4px;
+}
+
+input[type="search" i]::-webkit-search-cancel-button {
+    appearance: none;
+    background-image: url(../images/Clear.svg);
+    background-repeat: no-repeat;
+    height: 9px;
+    width: 11px;
+}
+
+hr {
+    background-color: #323438;
+    border: 0.7px solid #323438;
+    margin: 0;
+}
+
+p {
+    font-size: 12px;
+}
+
+h6{
+    margin: 0;
+}
+
+#myChart {
+    width: 300px;
+    height: 300px;
+}

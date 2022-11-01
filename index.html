@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <title>HTML/CSS/JS</title>
+</head>
+<body>
+
+        <header>
+            <div class="container-fluid">
+                <div class="searching-container">
+                    <div>
+                        <form>
+                            <div class="search"><img src="./images/Search.svg" alt="Search"></div>
+                            <input type="search" placeholder="Search instrument..." required>
+                        </form>
+                    </div>
+                    <div class="select-block">
+                        <div class="select-currency">
+                            <div class="currency-container">
+                                <span class="currency-symbol">USD</span>
+                                <span class="currency">120.18</span>
+                            </div>
+                            <div class="vertical-line"></div>
+                            <div class="rate-container">
+                                <span><img src="./images/arrow-up.svg" alt="Green Arrow"></span>
+                                <span class="rate">3.29%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inf-block">
+                    <div class="inf-container">
+                        <div class="stat-container">
+                            <span class="stat-title">Day Range</span>
+                            <div class="target-range">
+                                <span>227.13 - 233.37</span>
+                                <div>
+                                    <img src="./images/taget-line2.svg" alt="Target Range">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="vertical-line line"></div>
+    
+                        <div class="stat-container">
+                            <span class="stat-title">52 Week Range</span>
+                            <div class="target-range">
+                                <span>127.13 - 233.37</span>
+                                <div>
+                                    <img src="./images/target-line.svg" alt="Target Range">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="vertical-line line"></div>
+    
+                        <div class="stat-container">
+                            <span class="stat-title">Market Cap</span>
+                            <div>
+                                <span>2.04T USD</span>
+                            </div>
+                        </div>
+    
+                        <div class="vertical-line line"></div>
+    
+                        <div class="stat-container">
+                            <span class="stat-title">Beta</span>
+                            <div>
+                                <span>1.25</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-block">
+                    <nav class="navbar">
+                        <a href="/" class="nav-btn target" onclick="route()">Home</a>
+                        <a href="/profile-page" class="nav-btn" onclick="route()">Ptofile</a>
+                        <a href="/stat-page" class="nav-btn" onclick="route()">Statistics</a>
+                    </nav>
+                </div>
+                <div class="text-container">
+                    <div>
+                        <hr/>
+                    </div>
+                    <div class="description-block">
+                        <p class="description active">
+                            Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. 
+                            It also sells various related services. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; 
+                            iPad, a line of multi-purpose tablets; and wearables, home, and accessories. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, 
+                            looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+                        </p>
+                    </div>
+                    <div class="show-btn-container">
+                        <button class="show-btn">
+                            Show More
+                        </button>
+                    </div>
+                    <div>
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="main-page">
+                <div class="container-fluid main">
+                    <div class="inf-stat-container">
+                        <div class="stat-col">
+                            <div class="charts-container">
+                                <div class="charts">
+                                    <h6>Charts</h6>
+                                    <div class="duration-container">
+                                        <div class="duration actived">
+                                            <p>1M</p>
+                                        </div>
+                                        <div class="duration">
+                                            <p>2M</p>
+                                        </div>
+                                        <div class="duration">
+                                            <p>3M</p>
+                                        </div>
+                                        <div class="duration">
+                                            <p>1Y</p>
+                                        </div>
+                                        <div class="duration">
+                                            <p>3Y</p>
+                                        </div>
+                                        <div class="duration">
+                                            <p>5Y</p>
+                                        </div>
+                                        <div class="duration">
+                                            <p>10Y</p>
+                                        </div>
+                                        <div class="duration">
+                                            <p>All</p>
+                                        </div>
+                                    </div>
+                                    <div class="stat-line">
+                                        <canvas id="myChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="recomend-container">
+                                <div class="dash-board-container">
+                                    <h6>Analyst Recomendations</h6>
+                                    <div class="dash-board">
+                                        <div class="dash-container">
+                                            <div class="dash-arrow-container">
+                                                <img src="/images/dash-arrow.svg" alt="">
+                                            </div>
+                                            <div class="dash-mark">
+                                                <img src="/images/Ellipse.svg" alt="">
+                                            </div>
+                                            <img src="/images/recomend.svg" alt="Dashboard">
+                                        </div>
+                                        <div class="detail-items-block">
+                                            <div class="detail-item">
+                                                <div class="detail"></div>
+                                                <div class="detail-title">Strong Buy</div>
+                                            </div>
+                                            <div class="detail-item">
+                                                <div class="detail color1"></div>
+                                                <div class="detail-title">Buy</div>
+                                            </div>
+                                            <div class="detail-item">
+                                                <div class="detail color2"></div>
+                                                <div class="detail-title">Hold</div>
+                                            </div>
+                                            <div class="detail-item">
+                                                <div class="detail color3"></div>
+                                                <div class="detail-title">Sell</div>
+                                            </div>
+                                            <div class="detail-item">
+                                                <div class="detail color4"></div>
+                                                <div class="detail-title">Strong Sell</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr/>
+                                <div class="stat-columns-container">
+                                    <h6>Number of Analyst</h6>
+                                    <div class="stat-columns">
+                                        <canvas id="myBar"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stat-col">
+                
+                            <div class="gen-inf-container">
+                                <div class="gen-inf">
+                                    <h6>General Information</h6>
+                                    <div class="type-inf">
+                                        <p>Type</p>
+                                        <span>Common Stock</span>
+                                    </div>
+                                    <div class="type-inf">
+                                        <p>Exchange</p>
+                                        <span>NASDAQ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="analyst-container">
+                                <h6>Peers Analysis</h6>
+                                <div>
+                                    <hr/>
+                                    <div class="sections">
+                                        <div class="section">
+                                            <p>Name</p>
+                                        </div>
+                                        <div class="section">
+                                            <p>Price</p>
+                                            <p>Daily Change %</p>
+                                        </div>
+                                    </div>
+                                    <hr/>
+                                </div>
+                                <div class="stocks-block">
+                                    
+                                    <div class="stock-container">                        
+                                        <div class="stock">
+                                            <div class="stock-name">
+                                                <span>AAPL</span>
+                                                <p>Apple inc</p>
+                                            </div>
+                                            <div class="stock-price">
+                                                <span>120.03</span>
+                                            </div>
+                                            <div class="stock-rate">
+                                                <span>0.04%</span>
+                                            </div>
+                                        </div>
+                
+                                        <hr/>
+                                    </div>
+                
+                                    <div class="stock-container">                    
+                                        <div class="stock">
+                                            <div class="stock-name">
+                                                <span>CAJ</span>
+                                                <p>Canon inc</p>
+                                            </div>
+                                            <div class="stock-price">
+                                                <span>120.03</span>
+                                            </div>
+                                            <div class="stock-rate">
+                                                <span>0.04%</span>
+                                            </div>
+                                        </div>
+                    
+                                        <hr/>
+                
+                                    </div>
+                
+                                    <div class="stock-container">                    
+                                        <div class="stock">
+                                            <div class="stock-name">
+                                                <span>DELL</span>
+                                                <p>Dell Technologies</p>
+                                            </div>
+                                            <div class="stock-price">
+                                                <span>120.03</span>
+                                            </div>
+                                            <div class="stock-rate">
+                                                <span>0.04%</span>
+                                            </div>
+                                        </div>
+                    
+                                        <hr/>
+                
+                                    </div>
+                
+                                    <div class="stock-container">                    
+                                        <div class="stock">
+                                            <div class="stock-name">
+                                                <span>HPQ</span>
+                                                <p>HP inc</p>
+                                            </div>
+                                            <div class="stock-price">
+                                                <span>120.03</span>
+                                            </div>
+                                            <div class="stock-rate">
+                                                <span>0.04%</span>
+                                            </div>
+                                        </div>
+                    
+                                        <hr/>
+                
+                                    </div>
+                
+                                    <div class="stock-container">                    
+                                        <div class="stock">
+                                            <div class="stock-name">
+                                                <span>HPE</span>
+                                                <p>Dell Technologies</p>
+                                            </div>
+                                            <div class="stock-price">
+                                                <span>120.03</span>
+                                            </div>
+                                            <div class="stock-rate">
+                                                <span>0.04%</span>
+                                            </div>
+                                        </div>
+                    
+                                        <hr/>
+                
+                                    </div>
+                
+                                    <div class="stock-container">                    
+                                        <div class="stock">
+                                            <div class="stock-name">
+                                                <span>LOGI</span>
+                                                <p>Dell Technologies</p>
+                                            </div>
+                                            <div class="stock-price">
+                                                <span>120.03</span>
+                                            </div>
+                                            <div class="stock-rate">
+                                                <span>0.04%</span>
+                                            </div>
+                                        </div>
+                    
+                                        <hr/>
+                
+                                    </div>
+                
+                                    <div class="stock-container">                    
+                                        <div class="stock">
+                                            <div class="stock-name">
+                                                <span>STX</span>
+                                                <p>Apple inc</p>
+                                            </div>
+                                            <div class="stock-price">
+                                                <span>120.03</span>
+                                            </div>
+                                            <div class="stock-rate">
+                                                <span>0.04%</span>
+                                            </div>
+                                        </div>
+                    
+                                        <hr/>
+                
+                                    </div>
+                
+                                    <div class="stock-container">                    
+                                        <div class="stock">
+                                            <div class="stock-name">
+                                                <span>WDC</span>
+                                                <p>Canon Inc</p>
+                                            </div>
+                                            <div class="stock-price">
+                                                <span>120.03</span>
+                                            </div>
+                                            <div class="stock-rate">
+                                                <span>0.04%</span>
+                                            </div>
+                                        </div>
+                    
+                                        <hr/>
+                
+                                    </div>
+                
+                                    <div class="stock-container">                    
+                                        <div class="stock">
+                                            <div class="stock-name">
+                                                <span>SNE</span>
+                                                <p>Dell Technologies</p>
+                                            </div>
+                                            <div class="stock-price">
+                                                <span>120.03</span>
+                                            </div>
+                                            <div class="stock-rate">
+                                                <span>0.04%</span>
+                                            </div>
+                                        </div>
+                    
+                                        <hr/>
+                
+                                    </div>
+                
+                                    <div class="stock-container">                    
+                                        <div class="stock">
+                                            <div class="stock-name">
+                                                <span>DIS</span>
+                                                <p>Canon Inc</p>
+                                            </div>
+                                            <div class="stock-price">
+                                                <span>120.03</span>
+                                            </div>
+                                            <div class="stock-rate">
+                                                <span>0.04%</span>
+                                            </div>
+                                        </div>  
+                                    </div>
+                
+                                </div>
+                            </div>
+                
+                            <div class="price-target-container">
+                                <div class="price-target-graphic">
+                                    <div class="price-target">
+                                        <h6>Price Target</h6>
+                                        <div class="current-price">
+                                            <div class="mark"></div>
+                                            <p>Current</p>
+                                            <span>120.20</span>
+                                        </div>
+                                    </div>
+                                    <img src="/images/target-price.svg" alt="Price Target">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>              
+            </div>
+        </main>
+
+    <script src="script/chart-script.js"></script>
+    <script src="script/bar-script.js"></script>
+    <script src="script/select-stock.js"></script> 
+    <script src="script/select-charts.js"></script>  
+    <script src="script/router.js"></script>
+    <script src="script/show-txt.js"></script>
+</body>
+</html>

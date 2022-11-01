@@ -1,0 +1,299 @@
+
+.inf-stat-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-auto-flow: column;
+}
+
+.main {
+    padding: 12px;
+}
+
+.stat-col {
+    display: grid;
+    gap: 9px;
+}
+
+.charts-container {
+    width: 310px;
+    height: 246px;
+    background: #1C1E21;
+    border-radius: 4px;
+}
+
+.charts {
+    margin: 12px 12px;
+}
+
+.stat-line {
+    margin-top: 15px;
+}
+
+.duration-container {
+    display: flex;
+    gap: 8px;
+}
+
+.duration {
+    width: auto;
+    height: 20px;
+    border-radius: 4px;
+    padding: 0px 4px;
+}
+
+.actived {
+    background-color: #323438;
+}
+
+.duration p {
+    font-style: 10px;
+    margin: 3px 0px 0px 0px;
+    text-align: center;
+    color: #C4C4C4;
+}
+.gen-inf-container {
+    width: 310px;
+    height: 108px;
+    background: #1C1E21;
+    border-radius: 4px;
+}
+
+.gen-inf {
+    margin: 12px 12px;
+}
+
+.gen-inf p, h6 {
+    text-transform: uppercase;
+}
+
+.type-inf {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.type-inf span, p, h6 {
+    font-size: 12px;
+    margin: 6px 0px;
+}
+
+.type-inf p {
+    color: rgba(196, 196, 196, 0.5);
+}
+
+.recomend-container {
+    width: 310px;
+    height: 388px;
+    background: #1C1E21;
+    border-radius: 4px;
+}
+
+.dash-board {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+}
+
+.dash-board-container {
+    margin: 12px 12px;
+    height: 160px;
+}
+
+.dash-container {
+    position: relative;
+}
+
+.dash-arrow-container {
+    position: absolute;
+    left: 74px;
+    top: 60px;
+}
+
+.dash-mark {
+    position: absolute;
+    top: 18px;
+    left: 118px;
+}
+
+.detail-items-block {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-right: 12px;
+}
+
+.detail-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.detail {
+    width: 20px;
+    height: 4px;
+    background-color: #15E3B5;
+    border-radius: 4px;
+}
+
+.color1 {
+    background-color: rgba(21, 227, 181, 0.5);;
+}
+
+.color2 {
+    background-color: #323438;
+}
+
+.color3 {
+    background-color: rgba(246, 84, 76, 0.5);
+}
+
+.color4 {
+    background-color: #F6544C;
+}
+
+.detail-title {
+    color: rgba(196, 196, 196, 0.5);
+    font-size: 10px;
+}
+
+.stat-columns-container {
+    margin: 12px 12px;
+}
+
+.stat-columns {
+    width: 265px;
+    height: 151px;
+    margin-top: 15px;
+}
+
+.stat-line {
+    width: 286px;
+    height: 170px;
+}
+
+.analyst-container {
+    width: 310px;
+    height: 397px;
+    background: #1C1E21;
+    border-radius: 4px;
+}
+
+.analyst-container h6 {
+    margin: 12px 12px;
+}
+
+.sections {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 12px;
+}
+
+.section {
+    display: flex;
+    gap: 12px;
+}
+
+.section p {
+    color: rgba(196, 196, 196, 0.5);
+    margin: 3px 0px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.stocks-block {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.stock {
+    display: flex;
+    align-items: baseline;
+    gap: 25px;
+    margin: 3px 0px;
+}
+
+.stock-container{
+    border: 1px solid #1C1E21;
+    border-radius: 4px;
+    padding: 0px 8px;
+    margin: 0px 4px;
+}
+
+.stock-container.stock:focus {
+    border: 1px solid #15E3B5;
+}
+
+.stock-active {
+    border: 1px solid #15E3B5;
+}
+
+.stock-container:hover {
+    border: 1px solid #15E3B5;
+}
+
+.stock p, span {
+    font-size: 12px;
+}
+
+.stock-name {
+    display: flex;
+    align-items: center;
+}
+
+.stock-name p {
+    width: 95px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.stock-name span {
+    width: 40px;
+    color: #15E3B5;
+}
+
+.stock-name p {
+    margin: 0;
+    color: rgba(196, 196, 196, 0.5);
+}
+
+.stock-rate span {
+    color: #15E3B5;
+}
+
+.price-target-container{
+    width: 310px;
+    height: 125px;
+    background: #1C1E21;
+    border-radius: 4px;
+}
+
+.price-target-graphic {
+    margin: 0px 12px;
+}
+
+.price-target {
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 0px;
+}
+
+.current-price {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.current-price span, p {
+    font-size: 10px;
+    color: rgba(196, 196, 196, 0.5);
+}
+
+.mark {
+    width: 6px;
+    height: 6px;
+    border-radius: 4px;
+    background-color: #BB9E67;
+}

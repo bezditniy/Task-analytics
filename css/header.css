@@ -1,0 +1,144 @@
+.searching-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.select-block {
+    display: flex;
+    justify-content: center;
+    width: 145px;
+    height: 26px;
+    border: 1px solid #323438;
+    border-radius: 4px;
+}
+
+.select-currency {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.currency-container {
+    padding-bottom: 2px;
+}
+
+.currency-symbol {
+    font-size: 10px;
+    color: rgba(196, 196, 196, 0.5);
+}
+
+.currency {
+    font-size: 14px;
+}
+
+.vertical-line {
+    width: 15px;
+    height: 0px;
+    background-color: #323438;
+    border: 0.7px solid #323438;
+    transform: rotate(-90deg);
+}
+
+.rate-container {
+    padding-bottom: 2px;
+}
+
+.rate {
+    font-size: 12px;
+    color: #14CE8B;
+}
+
+.inf-block {
+    width: 628px;
+    height: 40px;
+    background-color: #1C1E21;
+    border-radius: 4px;
+    margin: 12px 0px 12px 0px;
+}
+
+.inf-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    font-size: 10px;
+}
+
+.stat-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+}
+
+.stat-container span {
+    font-size: 10px;
+}
+
+.target-range {
+    padding-top: 10px;
+}
+
+.stat-title {
+    color: rgba(196, 196, 196, 0.5);
+    font-size: 10px;
+}
+
+.line {
+    width: 20px;
+}
+
+.navbar-block {
+    margin: 12px 0px 12px 0px;
+}
+
+.navbar {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    width: auto;
+    height: 26px;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 0px 8px;
+}
+
+.target {
+    background-color: #323438;
+    text-align: center;
+}
+
+
+.show-btn-container {
+    margin-bottom: 12px;
+}
+
+.description-block {
+    display: block;
+    width: 600px;
+}
+  
+.description {
+    width: 620px; 
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.active {
+    display: -webkit-box;
+}
+
+.show-btn {
+    width: 75px;
+    height: 24px;
+    background: #222429;
+    border: 0.7px solid #323438;
+    border-radius: 4px;
+    padding-top: 0px;
+    color: #15E3B5;
+    font-size: 10px;
+}
